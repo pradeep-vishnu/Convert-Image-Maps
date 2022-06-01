@@ -3,11 +3,11 @@ For converting instance maps/class tags to RGB semantic segmentation maps and vi
 
 `rgb.py`: converts instance image maps to RGB segmentation maps. 
 
+`inst.py`: converts RGB segmentation maps to instance image maps. 
+
 'color' in the script is a list of color labels for each class numerically arranged w.r.t each class number tag. Modify
 	this according to your dataset.  
-
-`inst.py`: converts RGB segmentation maps to instance image maps. 
-               
+	
 <td><img width="800px" src="demo/demo.png"></td>
 
 
