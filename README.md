@@ -1,9 +1,13 @@
 # Convert-Image-Maps
-For converting instance maps to RGB semantic segmentation maps or vice-versa.
+For converting instance maps/class tags to RGB semantic segmentation maps and vice-versa.
 
-`inst_to_rgb.py`: converts instance image maps to RGB segmentation maps. 'color' array in the script is a list of color labels for each class numerically arranged w.r.t each class number tag. 
+`inst_to_rgb.py`: converts instance image maps to RGB segmentation maps. 
+
+'color' in the script is a list of color labels for each class numerically arranged w.r.t each class number tag. 
+
+`rgb_to_inst.py`: converts RGB segmentation maps to instance image maps. 
                
-<td><img width="900px" src="demo/demo.png"></td>
+<td><img width="800px" src="demo/demo.png"></td>
 
 
 ## Install Requirements
@@ -28,4 +32,4 @@ python rgb_to_inst.py --path <datapath> --imagewidth <size> --imageheight <size>
 
 By default, the converted images are saved in './save/' folder and image size is 2048x1024. 
 
-Disclaimer: You will not receive the same color masks if you try to convert back and forth. I think it's because the colors are not properly interpreted during this. Feel free to fix it and leave a PR.  
+Disclaimer: You will not receive the same color masks if you try to convert back and forth. I think it's because the colors are not properly interpreted during this. Feel free to fix this and leave a PR.  
