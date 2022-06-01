@@ -6,7 +6,7 @@ from torchvision.datasets.folder import default_loader
 from PIL import Image as im
 import glob
 
-parser = argparse.ArgumentParser(description='Converting Instance Maps to RGB Segmentation maps')
+parser = argparse.ArgumentParser(description='Converting RGB Segmentation maps to Instance Maps')
 parser.add_argument('--path', type=str, help='source folder datapath')
 parser.add_argument('--imagewidth', type=int, help='source image width',default=2048)
 parser.add_argument('--imageheight', type=int, help='source image height', default=1024)
@@ -30,7 +30,7 @@ for file in glob.glob(os.path.join(args.path, '*.png')):
     while(i<args.imageheight):
         j=0
         while(j<args.imagewidth):
-            label[i][j]=np.array(color[label[i][j][0]-1])
+            label[i][j]=np.array([np.where(label[i][j]==color)[0][0],0,0])
             j=j+1
         i=i+1
     data = im.fromarray(label, 'RGB')
