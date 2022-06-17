@@ -43,3 +43,4 @@ Image Frames to Video Sequence
 python video.py --path <datapath> --fps <video fps>
 
 ```
+Stores as video.avi in the same directory of script. 
