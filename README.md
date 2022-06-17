@@ -6,10 +6,13 @@ Python scripts for converting instance maps/class tags to RGB semantic segmentat
 `inst.py`: converts RGB segmentation maps to instance image maps. 
 
 'color' is a list of color labels for each class numerically arranged w.r.t each class number tag. Modify
-	this in the scripts depending your requirements.  
+	this in the scripts depending your requirements.
 	
-<td><img width="800px" src="demo/demo.png"></td>
-
+<td><img width="800px" src="demo/demo.png"></td>  
+	
+`video.py`: converts image frames to a video sequence at a specified fps rate.
+	
+<img src="demo/video.gif" width="400"/> 
 
 ## Install Requirements
 
