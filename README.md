@@ -12,7 +12,7 @@ Python scripts for converting instance maps/class tags to RGB semantic segmentat
 	
 `video.py`: converts image frames to a video sequence at a specified fps rate.
 	
-<img src="demo/video.gif" width="400"/> 
+<img src="demo/video.gif" width="800"/> 
 
 ## Install Requirements
 
