@@ -1,4 +1,5 @@
-# Convert-Image-Maps
+# Convert : Image ⇆ Maps & Image Frames to Video Sequence 
+
 Python scripts for converting instance maps/class tags to RGB semantic segmentation maps and vice-versa.
 
 `rgb.py`: converts instance image maps to RGB segmentation maps. 
