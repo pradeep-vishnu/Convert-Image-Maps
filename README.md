@@ -32,6 +32,12 @@ RGB Maps to Instance maps
 python inst.py --path <datapath> --imagewidth <size> --imageheight <size> --savepath <datapath>
 
 ```
+Image Frames to Video Sequence
+
+```
+python video.py --path <datapath> --fps <video fps>
+
+```
 
 
 By default, the converted images are saved in './save/' folder and image size is 2048x1024. 
