@@ -4,3 +4,4 @@ os
 torchvision
 PIL
 glob
+cv2
